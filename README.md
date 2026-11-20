@@ -1,51 +1,36 @@
-# Super Dolores · una SuperApp completa con TDD
-
-Mensajería · Pagos · Comercio · Transporte en un solo ecosistema.
-Mini-apps con permisos, bus de eventos, kill switch, lealtad y métricas de retención.
-Manual TDD · Desarrollo Móvil Integral · UTNG.
-
-> ⚠️ Simulación didáctica: el monedero es de juguete, los conductores son simulados y todo vive en memoria. No mueve dinero real.
-
-## Estructura
-
-```
-lib/
-  dominio/        dinero excepciones eventos monedero mensajeria comercio transporte
-                  mini_app contexto plataforma lealtad analitica notificaciones sugerencias
-  presentacion/
-    vm/           inicio monedero chat tienda viajes metricas
-    pantallas/    inicio monedero chat tienda viajes metricas horoscopo widgets
-  main.dart       la "concha" (shell) de la SuperApp
-test/             dominio_test servicios_test retencion_test vms_test
-```
-
-## Preparar (primera vez)
-
-Abre en VS Code la carpeta `super_dolores` (la que tiene `pubspec.yaml`):
-
-```bash
-flutter create . --project-name super_dolores
-del test\widget_test.dart
-flutter pub get
-flutter test
-```
-
-No usa paquetes externos ni permisos de Android.
-
-## Pruebas
-
-| Archivo | Rondas | Qué prueba |
-|---|---|---|
-| `test/dominio_test.dart` | 2–5, 8 | Dinero, monedero, bus de eventos, mensajería, mini-apps y permisos |
-| `test/servicios_test.dart` | 6–7 | Comercio con comisión, transporte y máquina de estados, integración |
-| `test/retencion_test.dart` | 9–11 | Lealtad, analítica (DAU/WAU/MAU, cohortes), notificaciones, sugerencias |
-| `test/vms_test.dart` | 12 | ViewModels de inicio, monedero, chat, tienda, viajes y métricas |
-
-## Ejecutar
-
-```bash
-flutter run
-```
-
-En Inicio puedes cambiar de persona (Ana, Luis, Marta), probar el kill switch de Viajes,
-ver el tablero de retención y la mini-app de un tercero (Horóscopo) que intenta hacer cosas indebidas.
+<img width="340" height="104" alt="Captura de pantalla 2026-11-19 213938" src="https://github.com/user-attachments/assets/1020d55e-5f65-4f26-8a60-0b902e0e7376" />
+<img width="349" height="264" alt="Captura de pantalla 2026-11-19 214401" src="https://github.com/user-attachments/assets/790f5d85-3720-4701-b5c0-ce244089867d" />
+<img width="337" height="52" alt="Captura de pantalla 2026-11-19 214426" src="https://github.com/user-attachments/assets/67b2d6b0-0201-4dc0-8c4c-b95dcf227aa3" />
+<img width="350" height="261" alt="Captura de pantalla 2026-11-19 214454" src="https://github.com/user-attachments/assets/d93ea8cf-6707-44c1-aaeb-a61508395a4d" />
+<img width="333" height="56" alt="Captura de pantalla 2026-11-19 214542" src="https://github.com/user-attachments/assets/6efd1198-6741-4f47-8310-194d7758f281" />
+<img width="351" height="253" alt="Captura de pantalla 2026-11-19 214611" src="https://github.com/user-attachments/assets/e391a309-16ea-4a42-9dcc-ee7cca33d04e" />
+<img width="341" height="50" alt="Captura de pantalla 2026-11-19 214632" src="https://github.com/user-attachments/assets/2eb16539-d14b-48ed-941e-4551c70534eb" />
+<img width="350" height="265" alt="Captura de pantalla 2026-11-19 214658" src="https://github.com/user-attachments/assets/8bd95b99-27f1-4a57-a7b1-78239a1c5828" />
+<img width="341" height="55" alt="Captura de pantalla 2026-11-19 214720" src="https://github.com/user-attachments/assets/14a714ac-79c6-4b84-bc73-1270cee61ed7" />
+<img width="350" height="260" alt="Captura de pantalla 2026-11-19 214747" src="https://github.com/user-attachments/assets/8910d900-9f40-4b60-b992-caf9a7a4d76c" />
+<img width="340" height="52" alt="Captura de pantalla 2026-11-19 214815" src="https://github.com/user-attachments/assets/71ea2f86-0c71-4334-a0e4-038e09b6a24c" />
+<img width="349" height="265" alt="Captura de pantalla 2026-11-19 214837" src="https://github.com/user-attachments/assets/a2bd7bfd-7bad-43d8-bc9a-7a966dfa0dae" />
+<img width="337" height="56" alt="Captura de pantalla 2026-11-19 214856" src="https://github.com/user-attachments/assets/7ab568fd-84d0-453c-a872-d5cca7ef38e7" />
+<img width="349" height="279" alt="Captura de pantalla 2026-11-19 214921" src="https://github.com/user-attachments/assets/947f827a-b533-4460-9202-2afa9f4d3864" />
+<img width="340" height="56" alt="Captura de pantalla 2026-11-19 214942" src="https://github.com/user-attachments/assets/9d0217ce-860e-429d-a63a-865a80f4a3ca" />
+<img width="352" height="274" alt="Captura de pantalla 2026-11-19 215026" src="https://github.com/user-attachments/assets/a2df5251-1bfa-4498-a28c-d2278dad7cb4" />
+<img width="335" height="53" alt="Captura de pantalla 2026-11-19 215115" src="https://github.com/user-attachments/assets/225bcf69-af13-4e61-b931-baafd6681e92" />
+<img width="353" height="283" alt="Captura de pantalla 2026-11-19 215139" src="https://github.com/user-attachments/assets/4bca09bf-9217-49aa-a6fd-3919d5e18ee0" />
+<img width="334" height="51" alt="Captura de pantalla 2026-11-19 215200" src="https://github.com/user-attachments/assets/1e6d8673-6186-4835-bb1e-efff8f112fb1" />
+<img width="347" height="272" alt="Captura de pantalla 2026-11-19 215225" src="https://github.com/user-attachments/assets/98846092-8d28-475d-b71f-9bf20a1ad2d3" />
+<img width="349" height="51" alt="Captura de pantalla 2026-11-19 215247" src="https://github.com/user-attachments/assets/f889079b-4bdf-4fd4-a933-1e33363c2958" />
+<img width="349" height="267" alt="Captura de pantalla 2026-11-19 215314" src="https://github.com/user-attachments/assets/6a8a136a-71d2-41eb-8551-4018de6d1e6a" />
+<img width="344" height="46" alt="Captura de pantalla 2026-11-19 215352" src="https://github.com/user-attachments/assets/607a682e-2c0c-4b91-bb8a-06702b63b5cf" />
+<img width="346" height="77" alt="Captura de pantalla 2026-11-19 215428" src="https://github.com/user-attachments/assets/4a8d87d9-8c5f-41da-96f0-bb7b7619b62d" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 215743" src="https://github.com/user-attachments/assets/ad13b28c-5627-4a05-8946-67a703fb202d" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 215754" src="https://github.com/user-attachments/assets/c27d82c1-902d-438a-a935-44f084f93197" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 215809" src="https://github.com/user-attachments/assets/fea28433-1911-453a-a529-2bb277f116cd" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 215835" src="https://github.com/user-attachments/assets/fede37eb-d8f5-4016-b8a2-3da920fec988" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 215851" src="https://github.com/user-attachments/assets/5c6c4711-36d8-4fc1-b5e6-9ed254697ec0" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 215904" src="https://github.com/user-attachments/assets/70abb7f5-c768-4d25-b2e3-15e42b62a570" />
+<img width="953" height="534" alt="Captura de pantalla 2026-11-19 215916" src="https://github.com/user-attachments/assets/f96417a9-2d17-4a29-beb1-5fbc997d14d1" />
+<img width="812" height="539" alt="Captura de pantalla 2026-11-19 215921" src="https://github.com/user-attachments/assets/d3dcc7d6-16f5-40c9-9ebd-192a1e9633e5" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 220019" src="https://github.com/user-attachments/assets/1e4b8e8f-f06d-4bb3-8b36-a164fc5034d6" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 220043" src="https://github.com/user-attachments/assets/71fe5860-9df9-4890-ae32-255dcef4f6a4" />
+<img width="959" height="539" alt="Captura de pantalla 2026-11-19 220053" src="https://github.com/user-attachments/assets/1974ebc7-719a-4ff6-a67f-504c8bbf04d4" />
+<img width="959" height="538" alt="Captura de pantalla 2026-11-19 220104" src="https://github.com/user-attachments/assets/6ae6679d-8e04-491c-9fde-12dfe114bfcb" />
